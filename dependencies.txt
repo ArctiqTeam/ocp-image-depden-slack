@@ -1,0 +1,53 @@
+Image stream tag "httpd:latest" in "openshift" doesn't have any dependencies.
+<openshift istag/httpd:2.4>
+	<default bc/tester>
+		<default istag/tester:latest>
+	<myproject bc/random-beer>
+		<myproject istag/random-beer:latest>
+	<myproject bc/web-app>
+		<myproject istag/web-app:latest>
+Image stream tag "jenkins:1" in "openshift" doesn't have any dependencies.
+Image stream tag "jenkins:2" in "openshift" doesn't have any dependencies.
+Image stream tag "jenkins:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "mariadb:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "mariadb:10.1" in "openshift" doesn't have any dependencies.
+Image stream tag "mongodb:2.4" in "openshift" doesn't have any dependencies.
+Image stream tag "mongodb:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "mongodb:3.2" in "openshift" doesn't have any dependencies.
+Image stream tag "mongodb:2.6" in "openshift" doesn't have any dependencies.
+Image stream tag "mysql:5.5" in "openshift" doesn't have any dependencies.
+Image stream tag "mysql:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "mysql:5.7" in "openshift" doesn't have any dependencies.
+Image stream tag "mysql:5.6" in "openshift" doesn't have any dependencies.
+Image stream tag "nodejs:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "nodejs:0.10" in "openshift" doesn't have any dependencies.
+Image stream tag "nodejs:4" in "openshift" doesn't have any dependencies.
+Image stream tag "nodejs:6" in "openshift" doesn't have any dependencies.
+Image stream tag "perl:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "perl:5.24" in "openshift" doesn't have any dependencies.
+Image stream tag "perl:5.20" in "openshift" doesn't have any dependencies.
+Image stream tag "perl:5.16" in "openshift" doesn't have any dependencies.
+Image stream tag "php:7.0" in "openshift" doesn't have any dependencies.
+Image stream tag "php:5.6" in "openshift" doesn't have any dependencies.
+Image stream tag "php:5.5" in "openshift" doesn't have any dependencies.
+Image stream tag "php:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "postgresql:9.2" in "openshift" doesn't have any dependencies.
+Image stream tag "postgresql:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "postgresql:9.5" in "openshift" doesn't have any dependencies.
+Image stream tag "postgresql:9.4" in "openshift" doesn't have any dependencies.
+Image stream tag "python:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "python:3.5" in "openshift" doesn't have any dependencies.
+Image stream tag "python:3.4" in "openshift" doesn't have any dependencies.
+Image stream tag "python:3.3" in "openshift" doesn't have any dependencies.
+Image stream tag "python:2.7" in "openshift" doesn't have any dependencies.
+Image stream tag "redis:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "redis:3.2" in "openshift" doesn't have any dependencies.
+Image stream tag "ruby:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "ruby:2.3" in "openshift" doesn't have any dependencies.
+Image stream tag "ruby:2.2" in "openshift" doesn't have any dependencies.
+Image stream tag "ruby:2.0" in "openshift" doesn't have any dependencies.
+Image stream tag "wildfly:9.0" in "openshift" doesn't have any dependencies.
+Image stream tag "wildfly:8.1" in "openshift" doesn't have any dependencies.
+Image stream tag "wildfly:latest" in "openshift" doesn't have any dependencies.
+Image stream tag "wildfly:10.1" in "openshift" doesn't have any dependencies.
+Image stream tag "wildfly:10.0" in "openshift" doesn't have any dependencies.
