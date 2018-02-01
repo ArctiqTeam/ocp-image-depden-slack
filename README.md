@@ -35,11 +35,11 @@ The script will output to the console as well as to Slack.
 
 ## Updating the image
 
-oc import-image <image stream tag or image stream>
+`oc import-image <image stream tag or image stream>`
 
 ## Handy Commands
 
-- *oc adm build-chain*
+- **oc adm build-chain**
 ```
 phil@c3po ocp-image-depden-slack]$ oc adm build-chain httpd:2.4 -n openshift --all --trigger-only=false
 <openshift istag/httpd:2.4>
@@ -47,7 +47,7 @@ phil@c3po ocp-image-depden-slack]$ oc adm build-chain httpd:2.4 -n openshift --a
                 <test istag/httpd-ex:latest>
 ```
 
-- *oc set triggers* (get triggers for bc or dc and change if needed)
+- **oc set triggers** (get triggers for bc or dc and change if needed)
 ```
 oc set triggers dc/httpd-ex
 NAME                        TYPE    VALUE                       AUTO
