@@ -1,14 +1,31 @@
 #!/bin/bash
+case "$1" in
+  
+  'report')
+    echo "Querying Openshift and loading message"
+    #start of for loop based on output of istag on openshift
+    oc project openshift
+    for x in $(oc get istag | awk '{if (NR!=1) {print $1}}')
+      do 
+        echo -n "."
+	#load the ocout variable with the output of the build-chain command
+        oc adm build-chain $x -n openshift --all
+	ocout=$ocout"\\\n"$(oc adm build-chain $x -n openshift --all)
+      done
+  ;;
 
-echo "Querying Openshift and loading message"
+  'image')
+    echo "Querying Openshift and loading message" 
+    ocout=$(oc adm build-chain $2 -n openshift --all)
+    echo $ocout
+  ;;
 
-#start of for loop based on output of istag on openshift
-for x in $(oc get istag | awk '{if (NR!=1) {print $1}}')
-	do 
-		echo -n "."
-		#load the ocout variable with the output of the build-chain command
-		ocout=$ocout"\\\n"$(oc adm build-chain $x -n openshift --all)
-done
+  *)
+    echo "Plase enter 'report' or 'image'"
+    exit 1
+  ;;
+esac
+
 echo -e "\nScript is done loading, sending output to slack"
 
 #strip the quotes from the output and replace with * so we get bold text output with mrkdwn
@@ -30,3 +47,6 @@ curl -s -d "payload=$jsonout" https://hooks.slack.com/services/$slackwebhook
 #Slack curl examples:
 #curl -X POST -H 'Content-type: application/json' --data '{"text":"This is a line of text.\nAnd this is another one."}' https://hooks.slack.com/services/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
 #curl -X POST --data-urlencode "payload={\"text\": \"This is posted to #general and comes from a bot named webhookbot.\"}" https://hooks.slack.com/services/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
+
+#one liner:
+#for x in $(oc get istag | awk '{if (NR!=1) {print $1}}'); do oc adm build-chain $x -n openshift --all; done
