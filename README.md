@@ -41,7 +41,7 @@ The script will output to the console as well as to Slack.
 
 - **oc adm build-chain**
 ```
-phil@c3po ocp-image-depden-slack]$ oc adm build-chain httpd:2.4 -n openshift --all --trigger-only=false
+phil@c3po ocp-image-depden-slack]$ oc adm build-chain httpd:2.4 -n openshift --all
 <openshift istag/httpd:2.4>
         <test bc/httpd-ex>
                 <test istag/httpd-ex:latest>
